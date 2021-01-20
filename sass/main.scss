@@ -1,0 +1,34 @@
+@import "mixins";
+
+
+body{
+    background-color: lightblue;
+}
+.box{
+    background-color: rgb(82, 82, 82);
+    height: 115px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    #red{
+        background-color: rgb(172, 2, 2);
+        @include light;
+    }
+    #orange{
+        background-color: rgb(206, 136, 6);
+        @include light;
+    }
+    #green{
+        background-color: rgb(25, 243, 25);
+        @include light;
+    }
+}
+.btn{
+    button{
+        border-radius: 90%;
+        border: 2px solid black;
+        height: 20px;
+        // width: 100px;
+    }
+}
